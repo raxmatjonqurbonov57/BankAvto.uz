@@ -1,0 +1,79 @@
+<svg xmlns="http://w3.org" viewBox="0 0 800 250" width="100%" height="100%">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0F2027" />
+      <stop offset="50%" stop-color="#203A43" />
+      <stop offset="100%" stop-color="#2C5364" />
+    </linearGradient>
+
+    <linearGradient id="accentGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00c6ff" />
+      <stop offset="100%" stop-color="#0072ff" />
+    </linearGradient>
+
+    <linearGradient id="speedGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF512F" />
+      <stop offset="100%" stop-color="#DD2476" />
+    </linearGradient>
+
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="4" flood-color="#000" flood-opacity="0.15" />
+    </filter>
+  </defs>
+
+  <!-- Background Canvas (Optional/Transparent) -->
+  <rect width="100%" height="100%" fill="none" />
+
+  <!-- LOGO ICON (Combined Shield, Car Silhouette, and Financial Growth) -->
+  <g transform="translate(40, 25)" filter="url(#dropShadow)">
+    <!-- Shield / Secure Banking Base -->
+    <path d="M40 20 L140 20 C140 20 160 90 140 140 C120 180 90 200 90 200 C90 200 60 180 40 140 C20 90 40 20 40 20 Z"
+          fill="url(#blueGrad)" />
+
+    <!-- Dynamic Car Silhouette / Forward Speed Lines -->
+    <path d="M55 95 C70 80, 85 75, 105 75 C125 75, 135 85, 145 95 L150 105 L70 105 Z"
+          fill="url(#accentGrad)" />
+    <path d="M50 112 L135 112 C140 112, 145 116, 142 122 L138 130 C135 135, 125 135, 120 135 L60 135 C52 135, 48 128, 50 122 Z"
+          fill="url(#speedGrad)" />
+
+    <!-- Wheel / Currency Accent cutouts -->
+    <circle cx="75" cy="135" r="10" fill="#0F2027" />
+    <circle cx="75" cy="135" r="4" fill="#00c6ff" />
+    <circle cx="115" cy="135" r="10" fill="#0F2027" />
+    <circle cx="115" cy="135" r="4" fill="#00c6ff" />
+  </g>
+
+  <!-- TYPOGRAPHY -->
+  <!-- "Bank" - Bold, Trustworthy, Financial Tone -->
+  <text x="240" y="145"
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="76"
+        font-weight="900"
+        fill="#0F2027"
+        letter-spacing="-1">Bank</text>
+
+  <!-- "Avto" - Modern, Tech, Speed Tone -->
+  <text x="435" y="145"
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="76"
+        font-weight="900"
+        fill="url(#accentGrad)"
+        letter-spacing="-1">Avto</text>
+
+  <!-- ".uz" - Domain TLD, Clean & Subtle -->
+  <text x="625" y="145"
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="40"
+        font-weight="700"
+        fill="#DD2476">.uz</text>
+
+  <!-- Subtitle / Tagline -->
+  <text x="245" y="185"
+        font-family="System-UI, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif"
+        font-size="16"
+        font-weight="600"
+        fill="#778899"
+        letter-spacing="6">AVTOKREDITLASH PORTALI</text>
+</svg>
